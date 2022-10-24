@@ -119,7 +119,7 @@ export class QuakeVis extends gfx.GfxApp
             // Uncomment this line of code to start creating earthquake markers
             // They will initially be placed at random locations on a plane
             // You will need to update the code to compute correct positions on the map and globe
-            //this.earth.createEarthquake(quake, normalizedMagnitude);
+            this.earth.createEarthquake(quake, normalizedMagnitude);
 
             quake = this.earthquakeDB.getNextQuake(currentDate);
         }

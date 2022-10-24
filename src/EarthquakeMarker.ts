@@ -5,6 +5,7 @@
  */ 
 
 import * as gfx from 'gophergfx'
+import { Earth } from './Earth';
 import { EarthquakeRecord } from './EarthquakeRecord';
 
 export class EarthquakeMarker extends gfx.MeshInstance
@@ -39,6 +40,8 @@ export class EarthquakeMarker extends gfx.MeshInstance
         // so you will likely want to change it to a more meaningful value.
         this.material = new gfx.GouraudMaterial();
         this.material.setColor(new gfx.Color(0.5, 0.5, 0.5));
+
+        
     }
 
     // This returns a number between 0 (start) and 1 (end)
